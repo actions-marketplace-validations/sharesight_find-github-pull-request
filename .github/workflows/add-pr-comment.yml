@@ -30,7 +30,7 @@ jobs:
 
       - name: Comment on the found Pull Request
         if: steps.find-pr.outputs.number != ''
-        uses: marocchino/sticky-pull-request-comment@v2
+        uses: marocchino/sticky-pull-request-comment@v3
         with:
           header: comment # basically a key to reuse the same comment
           number: ${{ steps.find-pr.outputs.number }}
